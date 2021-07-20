@@ -338,9 +338,13 @@ PRODUCT_ENFORCE_RRO_TARGETS := *
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/perf/msm_irqbalance.conf:$(TARGET_COPY_OUT_VENDOR)/etc/msm_irqbalance.conf    
+    $(LOCAL_PATH)/configs/perf/msm_irqbalance.conf:$(TARGET_COPY_OUT_VENDOR)/etc/msm_irqbalance.conf
 
 # Power
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
+
+# Remove unwanted packages
 PRODUCT_PACKAGES += \
     android.hardware.power@1.3-service.xiaomi_sm6250
 
