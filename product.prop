@@ -1,3 +1,6 @@
+# App
+persist.device_config.runtime_native_boot.iorap_perfetto_enable=true
+
 # Charger
 ro.charger.enable_suspend=true
 
