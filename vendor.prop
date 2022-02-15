@@ -215,5 +215,8 @@ persist.vendor.ims.disableQXDMLogs=1
 # WFD
 persist.sys.wfd.virtual=0
 
+# Skia
+renderthread.skia.reduceopstasksplitting=true
+
 # Wi-Fi
 wifi.aware.interface=wifi-aware0
