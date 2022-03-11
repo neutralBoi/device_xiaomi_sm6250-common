@@ -22,6 +22,9 @@ PRODUCT_PRODUCT_VNDK_VERSION := current
 # Enforce java interfaces of product partition
 PRODUCT_ENFORCE_PRODUCT_PARTITION_INTERFACE := true
 
+# MiuiCamera
+$(call inherit-product, vendor/xiaomi/miuicamera/config.mk)
+
 # AID/fs configs
 PRODUCT_PACKAGES += \
     fs_config_files
