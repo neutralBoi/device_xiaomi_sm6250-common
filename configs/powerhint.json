@@ -153,6 +153,16 @@
       ],
       "ResetOnInit": true
     },
+        {
+      "Name": "FgSchedtunePreferIdle",
+      "Path": "/dev/stune/foreground/schedtune.prefer_idle",
+      "Values": [
+        "1",
+        "0"
+      ],
+      "DefaultIndex": 0,
+      "ResetOnInit": true
+    },
     {
       "Name": "L3BigClusterMinFreq",
       "Path": "/sys/class/devfreq/soc:qcom,cpu6-cpu-l3-lat/min_freq",
@@ -160,6 +170,16 @@
         "1459200000",
         "300000000"
       ],
+      "ResetOnInit": true
+    },
+        {
+      "Name": "TASchedtunePreferIdle",
+      "Path": "/dev/stune/top-app/schedtune.prefer_idle",
+      "Values": [
+        "1",
+        "0"
+      ],
+      "DefaultIndex": 0,
       "ResetOnInit": true
     },
     {
@@ -281,7 +301,7 @@
     {
       "PowerHint": "LAUNCH",
       "Node": "UfsClkGateEnable",
-      "Duration": 5000,
+      "Duration": 3000,
       "Value": "0"
     },
     {
@@ -383,6 +403,18 @@
     {
       "PowerHint": "EXPENSIVE_RENDERING",
       "Node": "GPUMaxFreq",
+      "Duration": 0,
+      "Value": "0"
+          },
+    {
+      "PowerHint": "DISPLAY_INACTIVE",
+      "Node": "FgSchedtunePreferIdle",
+      "Duration": 0,
+      "Value": "0"
+    },
+    {
+      "PowerHint": "DISPLAY_INACTIVE",
+      "Node": "TASchedtunePreferIdle",
       "Duration": 0,
       "Value": "0"
     }
