@@ -44,6 +44,7 @@ vendor.bluetooth.soc=cherokee
 ro.launcher.blur.appLaunch=0
 
 # Camera
+persist.vendor.camera.privapp.list=com.android.camera
 vendor.camera.aux.packagelist=org.codeaurora.snapcam,org.lineageos.snap,com.android.camera2,com.android.camera
 
 # CNE
