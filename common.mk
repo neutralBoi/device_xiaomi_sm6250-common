@@ -276,6 +276,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     vendor.lineage.livedisplay@2.0-service-sdm
 
+# LMK tuning
+    ro.lmk.filecache_min_kb=153600 \
+    ro.lmk.stall_limit_critical=40
+
 # Media
 PRODUCT_PACKAGES += \
     libmm-omxcore \
