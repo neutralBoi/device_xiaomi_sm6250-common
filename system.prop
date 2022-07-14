@@ -40,6 +40,9 @@ persist.bt.a2dp.aac_disable=false
 persist.vendor.bt.aac_frm_ctl.enabled=true
 vendor.bluetooth.soc=cherokee
 
+# Disable blur on app launch
+ro.launcher.blur.appLaunch=0
+
 # Camera
 vendor.camera.aux.packagelist=org.codeaurora.snapcam,org.lineageos.snap,com.android.camera2,com.android.camera
 
